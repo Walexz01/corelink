@@ -1,0 +1,68 @@
+.facilites__facility{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+
+
+.facilites__facility .image{
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    background-color: rgba(227, 233, 229, 0.699);
+    overflow: hidden;
+    width: 100%;
+    
+
+}
+.facilites__facility .image img {
+    height: 20rem;
+    width: 100%
+}
+.facilites__facility .image h3{
+    color: black;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: 600;
+
+}
+.facilites__facility .image p{
+    padding: 1rem 0 0.5rem .5rem;
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.2;
+    padding-right: 0.5rem;
+
+
+}
+
+@media screen  and (max-width:1118px) {
+    .facilites__facility{
+        grid-template-columns: 45% 45% ;
+        gap: 5%;
+    }
+    
+}
+
+@media screen  and (max-width:668px) {
+    .facilites__facility{
+        grid-template-columns:  80% ;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+
+@media screen  and (max-width:320px) {
+    .facilites__facility{
+        grid-template-columns: 1fr;
+
+        
+    }
+}
+
+}
+
+

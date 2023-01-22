@@ -1,0 +1,111 @@
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../img/hero.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header__container .content{
+    margin-top: 1rem;
+
+}
+.header__container{
+    height: 100%;
+    display: grid;
+    text-align: center;
+    color: white;
+    place-items: center;
+}
+.header__container .content h2{
+    font-size: 5rem;
+    letter-spacing: .3rem;
+    padding: .5rem 0;
+
+}
+.header__container .content p{
+    line-height: 1.2;
+    font-size: 1.4rem;
+    width: 79%;
+    margin-inline: auto;
+    padding-bottom: 1.2rem;
+}
+.btn{
+    background: transparent;
+    padding: .5rem .8rem;
+    font-size: 2rem;
+    color: white;
+    border: 1px solid white;
+    margin-top: .5rem;
+    transition: all 500ms ease;
+}
+
+.btn:hover{
+    background: var(--orange);
+
+}
+
+@media screen and (max-width: 1208px) {
+    .header__container .content{
+        margin-top: 1.5rem;
+    }
+    .header__container .content h2{
+        font-size: 4.7rem;
+        letter-spacing: 0;
+        padding-bottom: 1rem;
+    }
+    .header__container .content p{
+        line-height: 1.1;
+        padding-bottom: 1.1rem;
+        width: 95%;
+    }
+    .btn{
+        padding: .35rem .7rem;
+        font-size: 1.9rem;
+        margin-top: .45rem;
+
+
+    }
+}
+
+@media screen  and (max-width:994px) {
+    .header__container .content h2{
+        line-height: .85;
+        letter-spacing: .2rem;
+    }
+    .header__container .content p{
+        line-height: 1;
+        padding-bottom: 1.1rem;
+        width: 97%;
+
+    }
+    
+}
+@media screen  and (max-width:572px) {
+    .header__container .content{
+        margin-top: 3rem;
+    
+    }
+    
+    .header__container .content h2{
+        font-size: 2.6rem;
+        padding-bottom: .8rem;
+        line-height: .8;
+    }
+    .header__container .content p{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .btn{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width:320px) {
+    .header__container .content h2{
+        font-size: 2.2rem;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+    
+}

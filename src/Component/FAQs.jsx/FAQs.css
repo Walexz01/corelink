@@ -1,0 +1,47 @@
+.faq{
+    background-color: var(--purple);
+    padding: 1rem ;
+    border-radius: 1rem;
+
+}
+.faq div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faq div h3{
+    font-size: 1.6rem;
+    color: white;
+}
+.faq div span{
+    background-color: transparent;
+    color: white;
+    font-size: 1.4rem;
+}
+.faq p{
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+    color: rgb(219, 214, 204);
+}
+.faqs__container .faqs__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 2rem 2rem;
+}
+.faq__header{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+
+
+
+@media screen and (max-width:644px) {
+    .faqs__container .faqs__box{
+        grid-template-columns: 1fr ;
+        align-items: flex-start;
+        gap: 2rem ;
+    }
+}

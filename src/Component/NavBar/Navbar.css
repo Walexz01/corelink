@@ -1,0 +1,115 @@
+.nav-bar{
+    height: 9vh;
+    background-color: var(--purple);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.toggle-btn{
+    display: none;
+}
+.logo{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-bar span{
+    color: white;
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+.links{
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    list-style: none;
+    
+}
+.links li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.links li>a:hover{
+    color: var(--orange);
+}
+@media screen and (max-width: 872px) {
+    .links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        margin-top: 0;
+        gap: 0;
+    }
+    .toggle-btn{
+        display: block;
+        position: relative;
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .toggle-btn svg{
+        color: var(--orange);
+        font-size: 10rem;
+
+    }
+    .links li>a{
+        margin-top: 0;
+        width: 4rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        background-color: var(--purple);
+        padding: 2rem 7rem 2rem 2rem;
+        transform: rotateX(90deg);
+        opacity: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        transform-origin: top;
+        animation: navAnima 600ms ease   forwards ;
+
+    }
+    .links li>a:nth-child(2){
+        animation-delay: 200ms;
+
+    }
+    .links li>a:nth-child(3){
+        animation-delay: 400ms;
+
+    }
+    .links li>a:nth-child(4){
+        animation-delay: 600ms;
+
+    }
+    .links li>a:nth-child(5){
+        animation-delay: 800ms;
+
+    }
+    @keyframes navAnima {
+        to{
+            transform: rotate(0);
+            opacity: 1;
+        }
+    }
+    .show-nav{
+        display: flex;
+    }
+    .hide-nav{
+        display: none;
+    }
+}

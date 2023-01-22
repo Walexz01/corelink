@@ -1,0 +1,81 @@
+.course__card{
+    background: rgba(255, 235, 205, 0.719);
+    padding: 1rem 1rem 1.3rem 1rem;
+    text-align: center;
+    box-shadow: 1rem 0rem 1rem rgba(0, 0, 0, 0.2);
+
+}
+.course__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+.course__card h3{
+    color: black;
+    font-size: 2.2rem;
+    padding: .5rem 0 .7rem 0;
+
+}
+.course__card2{
+    transform: scale(1.1);
+}
+
+/* ==================== Medioa  Query ==================== */
+@media screen and (max-width: 1202px) {
+    .course__card{
+        padding: .8rem .8rem 1.2rem .8rem;
+
+    }
+    .course__cards{
+        gap: 2.2rem;
+        margin-top: 2.8rem;
+    }
+    .course__card h3{
+        font-size: 2rem;
+        padding: .35rem 0 .3rem 0 ;
+    }
+    .course__card2{
+        transform: scale(1.09);
+    }
+    
+}
+@media screen  and (max-width:994px) {
+    .course__card{
+        padding: 1rem .9rem 1.3rem .9rem;
+    }
+    .course__card h3{
+        padding: .5rem 0  .9rem 0;
+    }
+    .course__cards{
+        grid-template-columns: repeat(2, 45%);
+        gap: 8% 5%;
+    }
+    .course__card2{
+        transform: scale(1);
+    }
+    
+}
+@media screen  and (max-width:756px) {
+    .course__cards{
+        grid-template-columns: repeat(1, 90%);
+        gap: 2rem;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen  and (max-width:320px) {
+    .course__cards{
+        grid-template-columns: 1fr;
+    }
+    .course__card{
+        padding: .5rem .4rem .8rem .4rem;
+    }
+    .course__card span{
+        font-size: 1.3rem;
+    }
+
+}
+

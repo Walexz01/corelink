@@ -1,0 +1,147 @@
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(98, 92, 196);
+    --boxShadow : 0px 19px 60px rgb(0 0 0  8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --container-width-lg: 80%;
+    --container-width-sm: 90%;
+}
+
+.App{
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    color: var(--black);    
+}
+*,*::before,*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  max-width: 1920px;
+}
+h1,h2,h3,h4,h5,h6{
+  line-height: 1.2;
+
+}
+
+a{
+  color: var(--blueCard) ;
+}
+.section_header{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section_header h3{
+  color: black;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.section_header h3 svg{
+  color: var(--orange);
+  display: block;
+  background-color: #242D49;
+  padding: 0.3rem;
+  font-size: 2.2rem;
+  border-radius: .4rem;
+
+}
+
+.section_header span{
+  color: #535353;
+  font-size: 1.2rem;
+  width: 60%;
+  margin-inline: auto;
+  display: inline-block;
+
+}
+
+section{
+  padding: 4rem 0;
+}
+.card{
+  padding: 1rem;
+  border-radius: .6rem;
+}
+
+@media screen and (max-width: 1104px) {
+  .section_header h3{
+    padding-bottom: .5rem;
+  }
+  .section_header span{
+    width: 73%;
+  }
+    
+
+} 
+
+@media screen  and (max-width:994px) {
+  .section_header{
+    margin-bottom: 1.4rem;
+  }
+  .section_header span{
+    width: 90%;
+  }
+
+}
+@media screen  and (max-width:834px) {
+  html{
+    font-size: 12px;
+  }
+  .container{
+    width: var(--container-width-sm);
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 2.1rem;
+  }
+  p, span{
+    font-size: 1.5rem;
+  }
+}
+@media screen  and (max-width:834px) {
+  .section_header{
+    margin-bottom: 1.4rem;
+  }
+  .section_header span{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .section_header h3{
+    padding-bottom: .3rem;
+    font-size: 2.2rem;
+  }
+
+}
+
+
+
+
+
